@@ -1,13 +1,10 @@
 function getComputerChoice() {
   let choice;
   let randomNum;
-
-  // How to get computer choice with array
-  // const handSigns = ["rock", "paper", "scissors"];
+  const handSigns = ["rock", "paper", "scissors"];
 
   randomNum = Math.floor(Math.random() * 3);
-  choice = randomNum === 0 ? "rock" : randomNum === 1 ? "paper" : "scissors";
-  // choice = handSigns[randomNum];
+  choice = handSigns[randomNum];
   
   return choice;
     
@@ -72,35 +69,6 @@ function playGame() {
       console.log(`${computerScore} - ${humanScore}`);
     }
   }
-
-  // How to play five rounds without loop
-
-  // let computerSelection;
-  // let humanSelection;
-
-  // computerSelection = getComputerChoice();
-  // humanSelection = getHumanChoice();
-
-  // playRound(humanSelection, computerSelection);
-
-  // if (humanScore >= computerScore) {
-  //   console.log(`${humanScore} : ${computerScore}`);
-  // } else {
-  //   console.log(`${computerScore} : ${humanScore}`);
-  // }
-
-  // computerSelection = getComputerChoice();
-  // humanSelection = getHumanChoice();
-
-  // playRound(humanSelection, computerSelection);
-
-  // if (humanScore >= computerScore) {
-  //   console.log(`${humanScore} : ${computerScore}`);
-  // } else {
-  //   console.log(`${computerScore} : ${humanScore}`);
-  // }
-
-  // ...
 
   // Print the final output which is winner variable
   if (humanScore === computerScore) {
