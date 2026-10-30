@@ -56,8 +56,8 @@ function playGame() {
     alert(`round ${i + 1}`);
 
     // Get inputs of computer and human
-    let computerSelection = getComputerChoice();
-    let humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    const humanSelection = getHumanChoice();
 
     // Logic for scores manipulating
     playRound(humanSelection, computerSelection);
