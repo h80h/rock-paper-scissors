@@ -1,19 +1,10 @@
 function getComputerChoice() {
-  let choice;
-  let randomNum;
   const handSigns = ["rock", "paper", "scissors"];
-
-  randomNum = Math.floor(Math.random() * 3);
-  choice = handSigns[randomNum];
-  
-  return choice;
-    
+  return handSigns[Math.floor(Math.random() * 3)];
 }
 
 function getHumanChoice() {
-  let choice = prompt("rock? paper? or scissors?", "rock");
-  return choice;
-  
+  return prompt("rock? paper? or scissors?", "rock");;
 }
 
 function playGame() {
