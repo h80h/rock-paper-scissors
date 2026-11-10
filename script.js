@@ -6,7 +6,7 @@ function getComputerChoice() {
 function playGame() {
   const signBtn = document.querySelector(".sign-btn");
   const log = document.querySelector("#log");
-  log.textContent = "";
+  log.textContent = "beat computer if you win 5 times first!\n\n";
 
   // Declare scores and winner which are the targeted output of a game
   let roundCount = 0;
