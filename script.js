@@ -1,6 +1,19 @@
 function getComputerChoice() {
-  const handSigns = ["rock", "paper", "scissors"];
-  return handSigns[Math.floor(Math.random() * 3)];
+  let handSigns = ["rock", "paper", "scissors"];
+
+  // Fisher-Yates shuffle algorithm produce unbiased permutation
+  function shuffle(arr){
+    for(let i = arr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    } 
+  }
+  
+  for(let i = 0; i < 1000000; i++) {
+    shuffle(handSigns);
+  }
+  
+  return handSigns[0];
 }
 
 function playGame() {
