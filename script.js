@@ -47,7 +47,7 @@ function playGame() {
 
   // Play round when signBtn's even handler gets triggered before one player hits 5 points
   signBtn.addEventListener("click", (e) => {
-    if (!winner && e.target.id !== "") {
+    if (!winner && e.target.id) {
       // Get inputs of human and computer
       const humanSelection = e.target.id;
       const computerSelection = getComputerChoice();
