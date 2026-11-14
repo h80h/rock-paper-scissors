@@ -1,8 +1,28 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 .sign-btn {
   cursor: default;
 }
 
 #log {
-  margin-top: 1em;
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+  border: black 1px solid;
+  box-sizing: border-box;
   white-space: pre;
+  overflow-y: auto
+}
+
+.sign-btn, #info {
+  height: 22px;
 }
